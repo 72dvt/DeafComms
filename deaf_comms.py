@@ -426,7 +426,7 @@ class DeafCommsApp:
         self.lang        = "en"
         self.player_name = "Player"
         self.room_id     = "takim1"
-        self.server_url  = "ws://34.141.78.151:10000"
+        self.server_url  = "wss://deafcomms-server.onrender.com"
         self.network     = None
         self.hotkeys     = None
         self.root_menus  = make_root_menus()
@@ -561,7 +561,7 @@ class DeafCommsApp:
     def _start_app(self):
         self.player_name = self.name_entry.get().strip()   or "Player"
         self.room_id     = self.room_entry.get().strip()   or "takim1"
-        self.server_url  = self.server_entry.get().strip() or "ws://34.141.78.151:10000"
+        self.server_url  = self.server_entry.get().strip() or "wss://deafcomms-server.onrender.com"
         self.lang        = self._lang_var.get()
 
         save_config({"name": self.player_name, "room": self.room_id,
