@@ -542,7 +542,7 @@ class DeafCommsApp:
             fg=TEXT_WHITE, insertbackground=TEXT_WHITE, relief="flat",
             highlightbackground=BORDER_COLOR, highlightthickness=1)
         self.server_entry.pack(fill="x", ipady=6, pady=(0, 18))
-        self.server_entry.insert(0, self.config.get("server", "ws://34.141.78.151:10000"))
+        self.server_entry.insert(0, self.config.get("server", "wss://deafcomms-server.onrender.com"))
 
         btn = tk.Frame(form, bg=ACCENT, cursor="hand2")
         btn.pack(fill="x", ipady=11)
